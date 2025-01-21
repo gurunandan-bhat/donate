@@ -10,6 +10,8 @@ Sethu, _meaning 'Bridge' in Sanskrit_, is a bridge to hope and support for thous
 
 <!--more-->
 
-A new centre equipped with a modern disability access design is expected to cost over five crore (50 million) Indian rupees and work on it is underway. You can help by buying Bricks each costing INR 10,000 or make a legacy/in-memoriam donation towards the cost of a Therapy Room. Read more about this here.
+{{< youtube id ="q4m25nsCKfI" >}}
+
+A new centre equipped with a modern disability access design is expected to cost over five crore (50 million) Indian rupees and work on it is underway. You can help by buying Bricks each costing INR 10,000 or make a legacy/in-memoriam donation towards the cost of a Therapy Room.
 
 _If you hold a passport from a country different from India, [read this](/foreign-donors) on claiming tax concessions in that country_
