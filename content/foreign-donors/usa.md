@@ -13,4 +13,4 @@ Ste 201-B,
 Diamond Bar,  
 CA 91765.
 
-Send an email to reachus@sethu.in informing Sethu about your donation, so that it can be tracked and correctly accounted for.
+**Important:** [Email us](mailto://reachus@sethu.in) informing Sethu about your donation, so that it can be tracked and correctly accounted for.
