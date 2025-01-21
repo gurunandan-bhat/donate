@@ -1,0 +1,66 @@
+{{- /*
+    Renders a menu for the given menu ID.
+
+    @context {page} page The current page.
+    @context {string} menuID The menu ID.
+
+    @example: {{ partial "menu.html" (dict "menuID" "main" "page" .)
+}}
+*/}}
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+
+{{- with index site.Menus $menuID }}
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="/"
+                ><img src="/home/sethu-logo-small.png"
+            /></a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav my-3">
+                    {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+                </ul>
+            </div>
+        </div>
+    </nav>
+{{- end }}
+
+{{- define "partials/inline/menu/walk.html" }}
+    {{- $page := .page }}
+    {{- range .menuEntries }}
+        {{- $attrs := dict "href" .URL }}
+        {{- if $page.IsMenuCurrent .Menu . }}
+            {{- $attrs = merge $attrs (dict "class" "nav-link active" "aria-current" "page") }}
+        {{- else }}
+            {{- $attrs = merge $attrs (dict "class" "nav-link") }}
+        {{- end }}
+        {{- $name := .Name }}
+        {{- with .Identifier }}
+            {{- with T . }}
+                {{- $name = . }}
+            {{- end }}
+        {{- end }}
+        <li class="nav-item">
+            <a
+                {{- range $k, $v := $attrs }}
+                    {{- with $v }}
+                        {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+                    {{- end }}
+                {{- end -}}
+                >{{ $name }}</a
+            >
+        </li>
+    {{- end }}
+{{- end }}

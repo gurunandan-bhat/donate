@@ -1,0 +1,19 @@
+[[main]]
+name    = 'Who We Are'
+pageRef = 'https://sethu.in/history'
+weight  = 20
+
+[[main]]
+name    = 'What We Do'
+pageRef = 'https://sethu.in/our-work'
+weight  = 30
+
+[[main]]
+name    = 'Join Us'
+pageRef = 'https://sethu.in/careers'
+weight  = 40
+
+[[main]]
+name    = 'Diary'
+pageRef = 'https://sethu.in/sethu-diaries'
+weight  = 50

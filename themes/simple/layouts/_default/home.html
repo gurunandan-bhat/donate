@@ -1,0 +1,57 @@
+{{ define "main" }}
+    <div class="container-fluid">
+        <img src="{{ .Params.hdrImage }}" class="img-responsive w-100 mb-5" />
+    </div>
+    <div class="container">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-6 text-center">
+                <h1
+                    class="display-4 fw-bold lh-1 mb-5 merriweather-regular"
+                    style="color: #005246;">
+                    Donate Today
+                </h1>
+                <h4 class="merriweather-regular-italic">
+                    And help us achieve our Pledge
+                </h4>
+                <h2 class="merriweather-regular display">
+                    No Child Unseen. No Child Unheard.
+                </h2>
+            </div>
+            <div class="col-lg-6 mx-auto py-5 merriweather-regular home-desc">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row my-5 merriweather-regular">
+            {{ range where site.RegularPages "Section" "donate" }}
+                <div class="col-lg-5 offset-lg-1">
+                    <h2 class="text-center mb-3">{{ .Title }}</h2>
+                    <img
+                        src="{{ .Params.hdrImage }}"
+                        class="img-responsive w-100 mb-5" />
+                    {{ .Summary }}
+                    <p>
+                        <a href="{{ .RelPermalink }}"
+                            >Join our "{{ .Title }}" campaign</a
+                        >
+                    </p>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center mb-5">Our Top Three Needs Today</h2>
+            {{ range where .Site.RegularPages "Section" "top-needs" }}
+                <div class="col-lg-4">
+                    <h5 class="text-center mb-3">{{ .Title }}</h5>
+                    <img
+                        src="/home/{{ .Params.hdrImage }}"
+                        class="img-responsive w-100 mb-5" />
+                    {{ .Content }}
+                </div>
+            {{ end }}
+        </div>
+    </div>
+{{ end }}

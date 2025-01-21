@@ -1,0 +1,8 @@
+languageCode = 'en-us'
+title        = 'Donate to Sethu'
+theme        = 'simple'
+
+[module]
+[module.hugoVersion]
+extended = false
+min      = "0.141.0"

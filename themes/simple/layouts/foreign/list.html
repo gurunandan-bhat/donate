@@ -1,0 +1,26 @@
+{{ define "main" }}
+    <div class="container-fluid">
+        <img src="{{ .Params.hdrImage }}" class="img-responsive w-100 mb-5" />
+    </div>
+    <div class="container pt-5">
+        <div class="row mb-5">
+            <div class="col-lg-8 offset-lg-2">
+                <h1>Not an Indian Passport holder?</h1>
+            </div>
+        </div>
+        {{ range .RegularPages }}
+            <div class="row mb-5">
+                <div class="col-lg-3 offset-lg-2 text-end">
+                    <img
+                        src="/home/{{ .Params.logoHdr }}"
+                        class="img-responsive w-75" />
+                </div>
+                <div class="col-lg-5">
+                    <h4 class="mb-3">{{ .Title }}</h4>
+                    {{ .Content }}
+                    <hr />
+                </div>
+            </div>
+        {{ end }}
+    </div>
+{{ end }}

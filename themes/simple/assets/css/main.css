@@ -1,0 +1,29 @@
+body {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #008d52;
+}
+
+.home-desc p {
+    font-size: 1.2rem;
+}
+.home-desc p + p {
+    font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: #008f85;
+}
