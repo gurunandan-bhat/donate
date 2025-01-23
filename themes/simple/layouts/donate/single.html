@@ -13,7 +13,7 @@
             </div>
             <div class="col-lg-5">
                 <h1 class="my-5">Donate</h1>
-                <form class="fira-sans-regular border-start ps-5">
+                <form class="fira-sans-regular border-start ps-5" id="donate">
                     <div class="row mb-4">
                         <div class="col-lg-6">
                             <label for="first-name" class="form-label"
@@ -90,5 +90,7 @@
                 </form>
             </div>
         </div>
+        {{ $js := resources.Get "/js/payments.js" | js.Build }}
+        <script type="module" src="{{ $js.RelPermalink }}" defer></script>
     </div>
 {{ end }}
