@@ -13,7 +13,6 @@ h6 {
     font-family: "Fira Sans", serif;
     font-weight: 500;
     font-style: normal;
-    color: #008d52;
 }
 
 .home-desc p {
@@ -25,5 +24,5 @@ h6 {
 
 a {
     text-decoration: none;
-    color: #008f85;
+    color: crimson;
 }
