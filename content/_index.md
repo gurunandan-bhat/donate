@@ -5,13 +5,22 @@ title = 'Home'
 hdrImage = '/home/donate-header.png'
 [[cascade]]
   [cascade._target]
+  kind = 'section'
+  path = '/sponsored-stories'
+  [cascade.build]
+  render = 'never'
+[[cascade]]
+  [cascade._target]
   kind = 'page'
   path = '/sponsored-stories/*'
   [cascade.build]
   render = 'never'
-  [cascade.params]
-  type = 'stories'
-
+[[cascade]]
+  [cascade._target]
+  kind = 'section'
+  path = '/top-needs'
+  [cascade.build]
+  render = 'never'
 +++
 
 Sethu’s client base has been steadily increasing since our founding in 2005. We have now crossed, annually, 1500 new registrations of children. Many of the families who come to us, are not in a financial position to pay for the services they need and we need your help to achieve our pledge: ‘**_no child unseen, no child unheard_**’.

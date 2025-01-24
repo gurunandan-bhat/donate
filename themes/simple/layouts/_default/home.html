@@ -24,7 +24,8 @@
         <div class="row my-5 merriweather-regular">
             <div class="col-lg-10 offset-lg-1">
                 <div class="row">
-                    {{ range where site.RegularPages "Type" "stories" }}
+                    <h2 class="text-center mb-5">Sponsors Make a Difference</h2>
+                    {{ range where site.RegularPages "Section" "stories" }}
                         <div
                             class="col mx-2 p-4"
                             style="background-color: lightyellow;">
@@ -43,15 +44,16 @@
     <div class="container">
         <div class="row">
             <h2 class="text-center mb-5">
-                Three Ways you can Make a Difference
+                Three Ways
+                <span style="font-style:italic;">You</span> Can&hellip;
             </h2>
             {{ range where .Site.RegularPages "Section" "top-needs" }}
                 <div class="col-lg-4">
                     <h5 class="text-center mb-3">{{ .Title }}</h5>
                     <img
                         src="/home/{{ .Params.hdrImage }}"
-                        class="img-responsive w-100 mb-5" />
-                    {{ .Content }}
+                        class="img-responsive w-100 mb-3" />
+                    {{ .Summary }}
                 </div>
             {{ end }}
         </div>
