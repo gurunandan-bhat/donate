@@ -48,12 +48,21 @@
                 <span style="font-style:italic;">You</span> Can&hellip;
             </h2>
             {{ range where .Site.RegularPages "Section" "top-needs" }}
-                <div class="col-lg-4">
-                    <h5 class="text-center mb-3">{{ .Title }}</h5>
-                    <img
-                        src="/home/{{ .Params.hdrImage }}"
-                        class="img-responsive w-100 mb-3" />
-                    {{ .Summary }}
+                <div class="col-lg-4 px-3">
+                    <div
+                        class="donate-schemes rounded-4 h-100 fira-sans-medium">
+                        <h5 class="text-center mb-3">{{ .Title }}</h5>
+                        <img
+                            src="/home/{{ .Params.hdrImage }}"
+                            class="img-responsive w-100 mb-3 rounded" />
+                        <div>{{ .Summary }}</div>
+                        <p>
+                            Click here to
+                            <a href="{{ .RelPermalink }}"
+                                >join {{ .Title }} campaign</a
+                            >
+                        </p>
+                    </div>
                 </div>
             {{ end }}
         </div>
