@@ -1,6 +1,8 @@
 {{ define "main" }}
     <div class="container-fluid">
-        <img src="{{ .Params.hdrImage }}" class="img-responsive w-100 mb-5" />
+        <img
+            src="/home/{{ .Params.hdrImage }}"
+            class="img-responsive w-100 mb-5" />
     </div>
     <div class="container py-5">
         <div class="row">

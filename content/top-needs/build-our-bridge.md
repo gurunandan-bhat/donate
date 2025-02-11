@@ -16,4 +16,6 @@ Twenty years since we started, we can no longer overlook our need for a space th
 
 Because Every Child Deserves to be Nurtured and Celebrated
 
+{{< youtube id ="q4m25nsCKfI" >}}
+
 The post-pandemic price rise has increased the cost of building our new centre, raising our initial estimate to Rs 10 crore, of which we've already raised Rs 6 crore. We’re halfway there already but need your help for the rest of our journey. Join us! Together, let’s build a place where neurodiversity is celebrated, and inclusion thrives!
