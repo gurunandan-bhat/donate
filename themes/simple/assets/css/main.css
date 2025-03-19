@@ -1,7 +1,9 @@
 body {
-    font-family: "Merriweather", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
 }
 
 h1,
@@ -10,16 +12,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Fira Sans", serif;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .home-desc p {
     font-size: 1.2rem;
-}
-.home-desc p + p {
-    font-size: 0.8rem;
 }
 
 a {
@@ -31,4 +31,10 @@ a {
     padding: 20px 20px;
     background-color: lightyellow;
     color: #000000;
+}
+
+.nav-item {
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 0 0.3rem;
 }

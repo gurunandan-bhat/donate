@@ -5,40 +5,30 @@
     <div class="container">
         <div class="row align-items-center g-lg-5 py-5">
             <div class="col-lg-6 text-center">
-                <h1 class="display-4 fw-bold lh-1 mb-5 merriweather-regular">
-                    Donate Today
-                </h1>
-                <h4 class="merriweather-regular-italic">
-                    And help us achieve our Pledge
-                </h4>
-                <h2 class="merriweather-regular display">
-                    No Child Unseen. No Child Unheard.
-                </h2>
+                <h1 class="display-4 fw-bold lh-1 mb-5">Donate Today</h1>
+                <h4>And help us achieve our Pledge</h4>
+                <h2>No Child Unseen. No Child Unheard.</h2>
             </div>
-            <div class="col-lg-6 mx-auto py-5 merriweather-regular home-desc">
+            <div class="col-lg-6 mx-auto py-5">
                 {{ .Content }}
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row my-5 merriweather-regular">
-            <div class="col-lg-10 offset-lg-1">
-                <div class="row">
-                    <h2 class="text-center mb-5">Sponsors Make a Difference</h2>
-                    {{ range where site.RegularPages "Section" "stories" }}
-                        <div
-                            class="col mx-2 p-4"
-                            style="background-color: lightyellow;">
-                            <img
-                                src="{{ .Params.hdrImage }}"
-                                class="img-responsive w-100 mb-2 rounded-3" />
-                            <div class="small">
-                                {{ .Content }}
-                            </div>
-                        </div>
-                    {{ end }}
+        <div class="row my-5">
+            <h2 class="text-center mb-5">Sponsors Make a Difference</h2>
+            {{ range where site.RegularPages "Section" "stories" }}
+                <div
+                    class="col-lg-4 px-3"
+                    style="background-color: lightyellow;">
+                    <img
+                        src="{{ .Params.hdrImage }}"
+                        class="img-responsive w-100 mb-2 rounded-3" />
+                    <div>
+                        {{ .Content }}
+                    </div>
                 </div>
-            </div>
+            {{ end }}
         </div>
     </div>
     <div class="container">
@@ -49,8 +39,7 @@
             </h2>
             {{ range where .Site.RegularPages "Section" "top-needs" }}
                 <div class="col-lg-4 px-3">
-                    <div
-                        class="donate-schemes rounded-4 h-100 fira-sans-medium">
+                    <div class="donate-schemes rounded-4 h-100">
                         <h5 class="text-center mb-3">{{ .Title }}</h5>
                         <img
                             src="/home/{{ .Params.hdrImage }}"
