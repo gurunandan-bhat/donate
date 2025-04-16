@@ -6,4 +6,4 @@ hdrImage = 'sethu-corpus.png'
 weight = 30
 +++
 
-Our corpus ensures that we will always be around &mdash; whatever the eventuality. When Covid struck our doors, like many others, we were forced to close and stop services. The outgoings for running our centre and our projects did not. The Sethu corpus is our very important security blanket. For our children and their families, the Sethu family needs to be here, always to ensure that, **_'no child is unseen and no child is unheard'_**.
+A healthy corpus enables us to concentrate on doing what we do best rather than struggle to fundraise just to keep the lights on month on month. Contributions to our corpus help us focus on our mission – to be a centre of excellence in child development, family-centred care and inclusion through interdisciplinary services, training, advocacy and research,– and maintain service quality and continuity no matter what eventuality strikes.
